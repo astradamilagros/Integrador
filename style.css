@@ -1,0 +1,455 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: url(Portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 607px;
+    margin-top: -50px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+nav i{
+    font-size: 28px;
+    display: none;
+    color: white;
+}
+#toggle-menu{
+    display: none;
+}
+nav label{
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.logo img{
+    width: 165px;
+    height: 165px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    padding: 0 10px 0 10px;
+}
+nav ul li a:hover{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 3px 3px 3px 3px;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 30px;
+}
+.botones button{
+    width: 90px;
+    height: 40px;
+    background-color: transparent;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+.botones button:hover{
+    background-color: rgb(169 156 216);
+    border: none;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+.content-header{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 40px;
+    padding-top: 130px;
+    max-width: 1200px;
+}
+.content-header button{
+    width: 150px;
+    height: 60px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 10px 25px 10px 25px;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+}
+.content-header button:hover{
+    background-color:rgb(169 156 216);
+    border: none;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+.content-header h1{
+    font-size: 60px;
+}
+
+/*Sobre nosotros*/
+
+.sobre-nosotros{
+    width: 100%;
+    height: 370px;
+    background-color: rgb(158, 154, 154);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sobre-nosotros h1{
+    font-size: 35px;
+}
+.sobre-nosotros p{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 80%;
+    max-width: 850px;
+}
+.beneficios{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 100;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+    gap: 15px;
+}
+.beneficios div{
+    padding: 8px 8px 8px 8px;
+    margin: 15px 15px 15px 15px;
+    align-items: center;
+    display: inline-flex;
+}
+.beneficios img{
+    width: 90px;
+    height: 83px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.beneficios h3{
+    padding-left: 25px;
+    font-weight: 100;
+}
+
+/*Destinos*/
+
+.titulo-destinos{
+    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-top: 80px;
+}
+.titulo-destinos h2{
+    font-size: 25px;
+    font-weight: 100;
+    display: flex;
+}
+.titulo-destinos p{
+    color: rgb(158, 154, 154);
+    font-size: 16px;
+}
+.destinos{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    justify-items: center;
+}
+
+.card{
+    width: 300px;
+    height: 320px;
+    display: inline-block;
+    border-radius: 1px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 10px;
+    background-position: center;
+    background-size: cover;
+    color:black;
+    transition: all 0.25s;   
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.card img{
+    width: 100%;
+    height: 250px;
+}
+.texto{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px 5px 5px;
+    position: absolute;
+}
+.texto h3{
+    font-size: 15px;
+    display: flex;
+    position: absolute;
+}
+.texto p{
+    font-size: 13px;
+    display: flex;
+    position: relative;
+    top: 1.5rem;
+}
+.texto h4{
+    display: flex;
+    font-size: 20px;
+    flex-direction: row;
+    position: relative;
+    padding-left: 190px;
+    top: -50px;
+    color: rgb(169 156 216);
+}
+/* Promociones */
+.promociones{
+    width: 100%;
+    height: 400px;
+    background: url(previaje1.jpg);
+    color: white;
+    font-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.promociones img{
+    width: 200px;
+    height: 120px;
+    border-radius: 20px;
+}
+.promociones div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    gap: 10px;
+}
+.promociones a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 5px;
+}
+
+/*Contacto*/
+
+.contacto{
+    position: relative;
+    background-color: rgb(50, 50, 49);
+    padding: 40px 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+}
+.contacto-info h1{
+    font-weight: 100;
+}
+.contacto-info h2 i{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    line-height: 40px;
+    margin-right: 10px;
+}
+.contacto-info h2{
+    color: white;
+    font-weight: 100;
+}
+
+.media ul{
+    padding: 0;
+    margin: 0;
+}
+.media ul li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.media ul li a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    background: #fff;
+}
+.media ul li a i{
+    font-size: 14px;
+    line-height: 30px;
+    color: #000;
+}
+.mapa{
+    width: 50%;
+    position: absolute;
+    top: 80px;
+    left: 450px;
+}
+.ul li a i:hover{
+    background-color: rgb(169 156 216);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 1);
+}
+.pie-pagina{
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    color: rgb(158, 154, 154);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 992px){
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        padding: 10px;
+    }
+    .navbar-list{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(400%);
+        transition: all 0.4s ease-out;
+    }
+    nav label{
+        display: block;
+    }
+    #toggle-menu:checked ~ .navbar-list{
+        transform: translateX(0%);
+        transition: all 0.4s ease-in;
+    } 
+    .destinos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .sobre-nosotros{
+        height: auto;
+    }
+    .beneficios{
+        flex-direction: column;
+    }
+    .titulo-destinos{
+        display: flex;
+        align-items: center;
+        padding: 25px 25px 25px 25px;
+    }
+    .mapa{
+        display: none;
+        
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+}
+@media (max-width: 576px){
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        padding: 10px;
+    }
+    .navbar-list{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(300%);
+        transition: all 0.4s ease-out;
+    }
+    nav label{
+        display: block;
+    }
+    #toggle-menu:checked ~ .navbar-list{
+        transform: translateX(0%);
+        transition: all 0.4s ease-in;
+    } 
+    .contacto-info p{
+        font-size: 12px;
+    }
+    .contacto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mapa{
+        display: none;
+    }
+    .promociones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        height: auto;
+    }
+    .promociones a{
+        font-size: 20px;
+    }
+    .destinos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .logo{
+        display: none;
+    }
+}
